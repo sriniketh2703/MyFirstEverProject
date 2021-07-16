@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+@media all {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Monda' , sans-serif;
+        background: #D3EAFF;
+        position: relative;
+    }
+
+    button {
+        text-align: center;
+        border-style: none;
+        color: rgb(126, 125, 125);
+        cursor: pointer;
+        background-color: rgb(241, 239, 239);
+    }
+
+    button:hover {
+        transition: 0.5s;
+        background: white;
+        color: black;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    
+
+    .counter {
+        font-size: 4.75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    
+    .value {
+        font-size: 4rem;
+        position: absolute;
+        top: 700%;
+        left: 50%;
+        transform: translate(-50%, 170%);
+    }
+
+    .btn-parent {
+        display: grid;
+        height: 30vh;
+        width: 30vw;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, 170%);
+    }
+
+    .btn-decrease, .btn-reset, .btn-increase {
+        border-radius: 2rem;
+        font-size: 1.3rem;
+        font-family: 'Monda' , sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
